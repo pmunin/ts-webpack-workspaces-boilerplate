@@ -53,8 +53,10 @@ let baseConfiguration={
 var configs=[
   cloneOf(baseConfiguration, { mode:"development"}),
   cloneOf(baseConfiguration,
-    { mode:"production"},
-    config=>{ config.output = cloneOf(config.output, { filename:"index.min.js"}) },
+    {
+      mode:"production",
+      output: cloneOf(baseConfiguration.output, {filename:"index.min.js"})
+    },
   ),
 ];
 
