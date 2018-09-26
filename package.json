@@ -1,0 +1,10 @@
+{
+  "name": "ts-webpack-workspaces-boilerplate",
+  "version": "1.0.0",
+  "author": "pmunin<philipp.munin@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
