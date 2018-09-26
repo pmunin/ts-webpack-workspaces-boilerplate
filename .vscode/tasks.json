@@ -14,6 +14,12 @@
             "script": "start",
             "path": "packages/my-react-app/",
             "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "build",
+            "path": "packages/my-ts-module1/",
+            "problemMatcher": []
         }
     ]
 }

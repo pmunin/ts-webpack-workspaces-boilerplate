@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import {Module1Func} from 'my-module1'
 import {Module2Func} from 'my-module2'
+import {MyTsModule1Function} from 'my-ts-module1'
+var myTsModule1 = require('my-ts-module1');
 
 class App extends Component {
   render() {
@@ -16,11 +18,15 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
           <button onClick={()=>{
             debugger;
-            var xx1 = Module1Func();
-            var xx2 = Module2Func();
+            var m1f = Module1Func();
+            var m2f = Module2Func();
+            console.log(myTsModule1);
+            var tsm1Func = MyTsModule1Function;
+            var tsm1 = MyTsModule1Function(123213);
+
 
             alert("Hallo world");
-          }}>Hallo world</button>
+          }}>Open Dev Tools and click here</button>
         </p>
       </div>
     );
