@@ -4,7 +4,7 @@ This is a boilerplate repo can be used as a quickstart for multi-package (multi-
 
 Packages can easily depend on each other (including cross references), and each package can be easily extracted to separate NPM package.
 
-** Current packages: **
+**Current packages:**
 
 - my-module1 - es6 javascript module
 - my-module2 - common-js javascript module
